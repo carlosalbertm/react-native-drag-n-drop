@@ -16,10 +16,10 @@ import com.facebook.react.uimanager.ViewManager;
 public class RNDragNDropPackage implements ReactPackage {
   @Override
   public List<NativeModule> createNativeModules(ReactApplicationContext reactContext) {
-    return Arrays.<NativeModule>asList(new RNDragNDropModule(reactContext));
-    // List<NativeModule> modules = new ArrayList<>();
-    // modules.add(new RNDragNDropModule(reactContext))
-    // return modules;
+    // return Arrays.<NativeModule>asList(new RNDragNDropModule(reactContext));
+    List<NativeModule> modules = new ArrayList<>();
+    modules.add(new RNDragNDropModule(reactContext))
+    return modules;
   }
 
   // Deprecated from RN 0.47
