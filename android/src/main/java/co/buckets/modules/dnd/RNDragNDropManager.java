@@ -9,7 +9,7 @@ import com.facebook.react.uimanager.annotations.ReactProp;
 import com.facebook.react.views.view.ReactViewGroup;
 
 
-public class RNDragNDropManager extends ViewGroupManager<RNCardView> {
+public class RNDragNDropManager extends ViewGroupManager<RNDnDView> {
 
     @Override
     public String getName() {

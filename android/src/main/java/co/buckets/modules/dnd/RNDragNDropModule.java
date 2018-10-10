@@ -18,6 +18,6 @@ public class RNDragNDropModule extends ReactContextBaseJavaModule {
 
   @Override
   public String getName() {
-    return "RNDragNDrop";
+    return "RNDnDView";
   }
 }
