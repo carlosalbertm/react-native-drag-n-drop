@@ -13,18 +13,19 @@ import com.facebook.react.bridge.JavaScriptModule;
 
 
 public class RNDragNDropPackage implements ReactPackage {
-    @Override
-    public List<NativeModule> createNativeModules(ReactApplicationContext reactContext) {
-      return Arrays.<NativeModule>asList(new RNDragNDropModule(reactContext));
-    }
+  @Override
+  public List<NativeModule> createNativeModules(ReactApplicationContext reactContext) {
+    return Arrays.<NativeModule>asList(new RNDragNDropModule(reactContext));
+  }
 
-    // Deprecated from RN 0.47
-    public List<Class<? extends JavaScriptModule>> createJSModules() {
-      return Collections.emptyList();
-    }
+  // Deprecated from RN 0.47
+  public List<Class<? extends JavaScriptModule>> createJSModules() {
+    return Collections.emptyList();
+  }
 
-    @Override
-    public List<ViewManager> createViewManagers(ReactApplicationContext reactContext) {
-      RNDragNDropManager dragNDropManager = new RNDragNDropManager();
-      return Arrays.<ViewManager>asList(dragNDropManager);
+  @Override
+  public List<ViewManager> createViewManagers(ReactApplicationContext reactContext) {
+    RNDragNDropManager dragNDropManager = new RNDragNDropManager();
+    return Arrays.<ViewManager>asList(dragNDropManager);
+  }
 }
