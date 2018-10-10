@@ -18,7 +18,7 @@ public class RNDragNDropPackage implements ReactPackage {
   public List<NativeModule> createNativeModules(ReactApplicationContext reactContext) {
     // return Arrays.<NativeModule>asList(new RNDragNDropModule(reactContext));
     List<NativeModule> modules = new ArrayList<>();
-    modules.add(new RNDragNDropModule(reactContext))
+    modules.add(new RNDragNDropModule(reactContext));
     return modules;
   }
 
