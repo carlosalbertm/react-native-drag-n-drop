@@ -6,12 +6,20 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/carlosalbertm/react-native-drag-n-drop.git"
+  },
   "keywords": [
-    "react-native"
+    "react-native",
+    "ios",
+    "android",
+    "drag",
+    "drop"
   ],
   "author": "Buckets.co",
   "license": "ISC",
   "peerDependencies": {
-    "react-native": "^0.41.2"
+    "react-native": ">=0.41.2"
   }
 }
